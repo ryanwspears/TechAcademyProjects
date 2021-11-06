@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Music Video";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My favorite Song</h1>
+</div>
+<div class="text-center">
+    <iframe class="musicVideo" width="560" height="315" src="https://www.youtube.com/embed/ba7mB8oueCY?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="text-center">
+    <h1 class="headline">
+        Post Malone
+    </h1>
+    <p class="tagline">
+        The greatest
+        <span class="punchline">ever.</span>
+    </p>
+    <script>
+        ScrollReveal().reveal('.headline', { delay: 2000 })
+		ScrollReveal().reveal('.tagline', { delay: 3000 })
+		ScrollReveal().reveal('.punchline', { delay: 4000 })
+    </script>
+</div>
